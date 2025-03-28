@@ -12,20 +12,26 @@ yoruba_numbers = {
     7: {"yoruba": "Meje", "breakdown": {"me": "to have", "je": "seven"}, "pronunciation": "Meh-jeh"},
     8: {"yoruba": "Mẹjọ", "breakdown": {"me": "to have", "jọ": "eight"}, "pronunciation": "Meh-jaw"},
     9: {"yoruba": "Mẹsan", "breakdown": {"me": "to have", "san": "nine"}, "pronunciation": "Meh-sahn"},
-    10: {"yoruba": "Mẹwa", "breakdown": {"me": "to have", "wa": "ten"}, "pronunciation": "Meh-wah"}
+    10: {"yoruba": "Mẹwa", "breakdown": {"me": "to have", "wa": "ten"}, "pronunciation": "Meh-wah"},
+    20: {"yoruba": "Ogun", "breakdown": "Basic Number", "pronunciation": "Oh-goon"}
 }
 
 st.title("Yoruba Number Breakdown App")
 
-number = st.number_input("Enter a number (1-10):", min_value=1, max_value=10, step=1)
+number = st.number_input("Enter a number:", min_value=1, step=1)
 
 if number in yoruba_numbers:
     data = yoruba_numbers[number]
     st.subheader(f"Number: {number}")
     st.write(f"**Yoruba:** {data['yoruba']}")
     st.write(f"**Pronunciation:** {data['pronunciation']}")
-    st.write("**Breakdown:**")
-    for key, value in data['breakdown'].items():
-        st.write(f"- **{key}**: {value}")
+
+    if 'breakdown' in data:
+        st.write("**Breakdown:**")
+        if not isinstance(data['breakdown'], dict):
+             st.write(data['breakdown'])
+        else:
+            for key, value in data['breakdown'].items():
+                st.write(f"- **{key}**: {value}")
 else:
-    st.warning("Please enter a number between 1 and 10.")
+    st.warning(f"'{number}' is currently not available")
