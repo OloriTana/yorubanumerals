@@ -73,8 +73,8 @@ yoruba_numbers = {
     215: {"yoruba": "àrúndínlókòólérúgba", "breakdown": "àrún (five) + dín ní (subtracted from) + okòólérúgba (two hundred and twenty)"},
     220: {"yoruba": "okòólérúgba", "breakdown": "okòó (twenty) + lé ní (added to) + igba (two hundred)"},
     221: {"yoruba": "ọ̀kanléokòólérúgba", "breakdown": "ọ̀kan (twenty-one) + lé ní (added to) + okòólérúgba (two hundred and twenty)"},
-    225: {"yoruba": "àrúnléokòólérúgba", "breakdown": "àrún (twenty-five) + lé ní (added to) + okòólérúgba (two hundred and twenty)"
-    229: {"yoruba": "ẹ̀sánléokòólérúgba", "breakdown": "ẹ̀sán (twenty-nine) + lé ní (added to) + okòólérúgba (two hundred and twenty)"
+    225: {"yoruba": "àrúnléokòólérúgba", "breakdown": "àrún (twenty-five) + lé ní (added to) + okòólérúgba (two hundred and twenty)"},
+    229: {"yoruba": "ẹ̀sánléokòólérúgba", "breakdown": "ẹ̀sán (twenty-nine) + lé ní (added to) + okòólérúgba (two hundred and twenty)"},
     230: {"yoruba": "ẹ̀wádínlójìlérúgba", "breakdown": "ẹ̀wá (ten) + dín ní (subtracted from) + òjìlérúgba (two hundred and forty)"
     340: {"yoruba": "òjìlélọ́ọ̀dúnrún", "breakdown": "òjì (40) + lé ní (added to) + ọ̀dúnrún (300)"},
     450: {"yoruba": "ẹ̀wádínlọ́talérinwó", "breakdown": "ẹ̀wá (10) + dín (subtracted from) + ọ̀ta (60) + lé ní (added to) irinwo (400)"},
