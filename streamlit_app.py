@@ -100,7 +100,7 @@ if number in yoruba_numbers:
     unsafe_allow_html=True
 )
 
-    st.subheader(f"Number: {number}")
+    st.subheader(f"Number: {number:,.0f}")
     st.write(f"**Yoruba:** {data['yoruba']}")
     
     if 'breakdown' in data:
