@@ -75,13 +75,13 @@ yoruba_numbers = {
     221: {"yoruba": "ọ̀kanléokòólérúgba", "breakdown": "ọ̀kan (twenty-one) + lé ní (added to) + okòólérúgba (two hundred and twenty)"},
     225: {"yoruba": "àrúnléokòólérúgba", "breakdown": "àrún (twenty-five) + lé ní (added to) + okòólérúgba (two hundred and twenty)"},
     229: {"yoruba": "ẹ̀sánléokòólérúgba", "breakdown": "ẹ̀sán (twenty-nine) + lé ní (added to) + okòólérúgba (two hundred and twenty)"},
-    230: {"yoruba": "ẹ̀wádínlójìlérúgba", "breakdown": "ẹ̀wá (ten) + dín ní (subtracted from) + òjìlérúgba (two hundred and forty)"
+    230: {"yoruba": "ẹ̀wádínlójìlérúgba", "breakdown": "ẹ̀wá (ten) + dín ní (subtracted from) + òjìlérúgba (two hundred and forty)"},
     340: {"yoruba": "òjìlélọ́ọ̀dúnrún", "breakdown": "òjì (40) + lé ní (added to) + ọ̀dúnrún (300)"},
     450: {"yoruba": "ẹ̀wádínlọ́talérinwó", "breakdown": "ẹ̀wá (10) + dín (subtracted from) + ọ̀ta (60) + lé ní (added to) irinwo (400)"},
     600: {"yoruba": "ẹgbẹ̀ta", "breakdown": "igba (200) lọ́nà (multiplied by) + ẹ̀ta (3)"},
     1000: {"yoruba": "ẹgbẹ̀rún", "breakdown": "igba (200) lọ́nà (multiplied by) + àrún (5)"},
     5000: {"yoruba": "ẹ̀ẹ́dẹ́gbàáta", "breakdown": "ẹgbẹ̀rún (1000) + dín (subtracted from) + ẹgbẹ̀ta (6000)"},
-    20000: {"yoruba": "ẹgbàáwàá/ọ̀kẹ́ kan", "breakdown": "ẹgbàá (2000) lọ́nà (multiplied by) + ẹ̀ta (3)", "Additional note": "'Ọ̀kẹ́' is the traditional name for 20,000"},
+    20000: {"yoruba": "ẹgbàáwàá/ọ̀kẹ́ kan", "breakdown": {"Note": "ẹgbàá (2000) lọ́nà (multiplied by) + ẹ̀ta (10)", "Additional note": "'Ọ̀kẹ́' is the traditional name for 20,000"},
     1000000: {"yoruba": "ẹgbàáwàá/ọ̀kẹ́ àádọ́ta", "breakdown": "ẹgbàáwàá/ọ̀kẹ́ (20,000) lọ́nà (multiplied by) + àádọ́ta (50)"},
     1000000000: {"yoruba": "ẹgbàáwàá/ọ̀kẹ́ ẹgbàáàrúndínlọ́gbọ̀n", "breakdown": "ẹgbàáwàá/ọ̀kẹ́ (20,000) lọ́nà (multiplied by) + ẹgbàáàrúndínlọ́gbọ̀n (5000)"},  
 }
