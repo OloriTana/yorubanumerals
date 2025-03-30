@@ -84,8 +84,6 @@ yoruba_numbers = {
     20000: {"yoruba": "ẹgbàáwàá/ọ̀kẹ́ kan", "breakdown": "ẹgbàá (2000) lọ́nà (multiplied by) + ẹ̀ta (3)", "Additional note": "'Ọ̀kẹ́' is the traditional name for 20,000"},
     1000000: {"yoruba": "ẹgbàáwàá/ọ̀kẹ́ àádọ́ta", "breakdown": "ẹgbàáwàá/ọ̀kẹ́ (20,000) lọ́nà (multiplied by) + àádọ́ta (50)"},
     1000000000: {"yoruba": "ẹgbàáwàá/ọ̀kẹ́ ẹgbàáàrúndínlọ́gbọ̀n", "breakdown": "ẹgbàáwàá/ọ̀kẹ́ (20,000) lọ́nà (multiplied by) + ẹgbàáàrúndínlọ́gbọ̀n (5000)"},  
-        
-      
 }
 
 st.title("Yoruba Number Breakdown App")
