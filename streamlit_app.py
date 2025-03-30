@@ -2,7 +2,7 @@ import streamlit as st
 import json
 
 # Yoruba numbers data
-yoruba_numbers = {
+yoruba_numbers = { 
     1: {"yoruba": "(Ọ̀)kan", "breakdown": "Base Numeral for 1", "pronunciation": "aw-kan"},
     2: {"yoruba": "Èjì", "breakdown": "Base Numeral for 2", "pronunciation": "ey-jee"},
     3: {"yoruba": "Ẹ̀ta", "breakdown": "Base Numeral for 3", "pronunciation": "eh-tah"},
@@ -81,9 +81,9 @@ yoruba_numbers = {
     600: {"yoruba": "ẹgbẹ̀ta", "breakdown": "igba (200) lọ́nà (multiplied by) + ẹ̀ta (3)"},
     1000: {"yoruba": "ẹgbẹ̀rún", "breakdown": "igba (200) lọ́nà (multiplied by) + àrún (5)"},
     5000: {"yoruba": "ẹ̀ẹ́dẹ́gbàáta", "breakdown": "ẹgbẹ̀rún (1000) + dín (subtracted from) + ẹgbẹ̀ta (6000)"},
-    20000: {"yoruba": "ẹgbàáwàá/ọ̀kẹ́ kan", "breakdown": {"Note": "ẹgbàá (2000) lọ́nà (multiplied by) + ẹ̀ta (10)", "Additional note": "'Ọ̀kẹ́' is the traditional name for 20,000"},
+    20000: {"yoruba": "ẹgbàáwàá/ọ̀kẹ́ kan", "breakdown": "ẹgbàá (2000) lọ́nà (multiplied by) + ẹ̀wá (10)", "Additional note": "'Ọ̀kẹ́' is the traditional name for 20,000"},
     1000000: {"yoruba": "ẹgbàáwàá/ọ̀kẹ́ àádọ́ta", "breakdown": "ẹgbàáwàá/ọ̀kẹ́ (20,000) lọ́nà (multiplied by) + àádọ́ta (50)"},
-    1000000000: {"yoruba": "ẹgbàáwàá/ọ̀kẹ́ ẹgbàáàrúndínlọ́gbọ̀n", "breakdown": "ẹgbàáwàá/ọ̀kẹ́ (20,000) lọ́nà (multiplied by) + ẹgbàáàrúndínlọ́gbọ̀n (5000)"},  
+    1000000000: {"yoruba": "ẹgbàáwàá/ọ̀kẹ́ ẹgbàáàrúndínlọ́gbọ̀n", "breakdown": "ẹgbàáwàá/ọ̀kẹ́ (20,000) lọ́nà (multiplied by) + ẹgbàáàrúndínlọ́gbọ̀n (5000)"}
 }
 
 st.title("Yoruba Number Breakdown App")
@@ -93,22 +93,21 @@ number = st.number_input("Enter a number:", min_value=1, step=1)
 if number in yoruba_numbers:
     data = yoruba_numbers[number]
     st.subheader(f"Number: {number}")
-    st.write(f"**Yoruba:** {data['yoruba']}")
+    st.write(f"*Yoruba:* {data['yoruba']}")
     
     if 'breakdown' in data:
-        st.write("**Breakdown:**")
+        st.write("*Breakdown:*")
         if not isinstance(data['breakdown'], dict):
              st.write(data['breakdown'])
         else:
             for key, value in data['breakdown'].items():
-                st.write(f"- **{key}**: {value}")
+                st.write(f"- *{key}*: {value}")
     if 'pronunciation' in data:
-        st.write("**Pronunciation:**")
+        st.write("*Pronunciation:*")
         if not isinstance(data['pronunciation'], dict):
             st.write(data['pronunciation'])
         else:
              for key, value in data("pronunciation", "Pronunciation not available"):
-                st.write(f"**{Pronunciation}**: {data[pronunciation]}")
+                st.write(f"*{Pronunciation}*: {data[pronunciation]}")
 else:
     st.warning(f"'{number}' is currently not available")
-
